@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Schibsted+Grotesk:wght@400;500;600;700;800;900&display=swap');
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Schibsted Grotesk', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+h2{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+h4{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+h5{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+h6{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* ========================================banner============================================= */
+.banner-wrapper{
+    padding: 150px 0px;
+    color: #ffffff;
+    max-width: 495px;
+    margin-left: 140px;
+}
+.banner-wrapper h6{
+    color: black;
+    background: #fbbe32;
+    display: inline-block;
+    padding: 5px 30px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin-bottom: 20px;
+}
+.banner-wrapper h1 span{
+    font-weight: 400;
+}
+
+.banner-wrapper h4{
+    margin-top: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.banner-wrapper h2{
+    font-weight: 400;
+    color: #f02757;
+    margin-bottom: 40px;
+}
+.banner-wrapper a{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    background: #f02757;
+    padding: 10px 40px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+
+
+
+
+.register-wrapper{
+    margin-top: 30px;
+}
+.register-wrapper input{
+    padding: 15px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.register-wrapper button{
+  font-family: 'Schibsted Grotesk', sans-serif;
+  font-weight: 700;
+  background: #051d43;
+  padding: 15px 0;
+  color: #ffffff;
+  margin-top: 10px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.register-wrapper button:hover{
+    background: #051d43;
+    color: #ffffff;
+}
+.register-text{
+    color: red !important;
+}
+.register-icom{
+    position: relative;
+}
+.register-icom h5{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+/* ==================================================admin dashboard ===================================== */
+.root-wrapper{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: #1d2634;
+    color: #ffffff;
+    overflow-y: scroll;
+}
+.root-sidebar{
+    background: #263043;
+    width: 300px;
+    margin-right: 50px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    background-color: #263043;
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    
+}
+.sidebar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 0px 30px;
+    margin-bottom: 30px;
+
+}
+  
+.sidebar-title > span {
+display: none;
+}
+  
+.sidebar-brand {
+margin-top: 15px;
+font-size: 20px;
+font-weight: 700;
+}
+
+.sidebar-list {
+padding: 0;
+list-style-type: none;
+}
+
+.sidebar-list-item {
+padding: 20px 20px 20px 20px;
+font-size: 18px;
+color: #ffffff !important;
+position: relative;
+}
+
+.sidebar-list-item:hover {
+background-color: rgba(255, 255, 255, 0.2);
+cursor: pointer;
+}
+
+.sidebar-list-item > a {
+text-decoration: none;
+color: #9e9ea4;
+}
+.sidebar-list-item:last-child{
+position: absolute;
+width: 15.5%;
+bottom: 20px;
+}
+
+.sidebar-responsive {
+display: inline !important;
+position: absolute;
+/*
+    we want the z-index of the sidebar higher so that
+    the charts are not showing over the sidebar 
+    on small screens
+*/
+z-index: 12 !important;
+}
+
+
+.addproduct-wrapper input{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    padding: 10px 10px;
+    color: black;
+}
+.addproduct-error{
+    color: #f02757 !important;
+}
+.addproduct-checkbox input{
+    padding: 5px !important;
+}
+.form-check{
+    padding-left: 3.5em;
+}
+.form-check:first-child{
+    padding-left: 1.5em;
+}
+.addproduct-text{
+    color: black;
+}
